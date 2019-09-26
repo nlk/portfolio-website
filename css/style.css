@@ -1,3 +1,52 @@
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+* {
+  box-sizing: border-box;
+}
+header{
+background-color: #2F4D46;
+padding: 0 10px;
+display: inline-block;
+width: 100%;
+-webkit-box-shadow: 2px 5px 6px 0px rgba(36, 45, 50, 0.36);
+-moz-box-shadow:    2px 5px 6px 0px rgba(36, 45, 50, 0.36);
+box-shadow:         2px 5px 6px 0px rgba(36, 45, 50, 0.36);
+position: fixed;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #FFFFFF;
+}
+nav > ul > li > a:visited {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+nav > ul > li > a:hover {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #F79D96;
+}
+nav > ul > li > a:active {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #B2D2CB;
+}
 body{
   background-color:#B2D2CB;
   font-family: 'Open Sans', sans-serif;
@@ -5,76 +54,155 @@ body{
   font-weight: 300;
   line-height: 1.5;
   color: #FFFFFF;
+  width: 100%;
+  }
+.hero {
+  background-color: #2F4D46;
+  display: inline-block;
+  border-bottom: 3px solid #F79D96;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+.work{
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.about {
+  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.list {
+  padding: 20px;
+  color: #2F4D46;
+  font-weight: 500;
+  font-size: 14px;
+}
+main {
+  padding-top: 56px;
+  padding-bottom: ;
+  width: 100%;
+  border-bottom: 3px solid #F79D96;
+}
+footer{
+text-align: center;
+width: 100%
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 2000;
-  color: #2F4D46
+  color: #FFFFFF;
+  text-align: center;
 }
-
 h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: 1500;
   color: #FFFFFF
 }
-
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 1000;
   color: #FFFFFF
 }
 h4 {
-  font-size: 2em;
-  font-weight: 100;
-  color: #2F4D46
+  font-size: 1.3em;
+  font-weight: 1000;
+  color: #FFFFFF
+}
+p {
+  max-width: 600px
 }
 img {
   width: 100%;
 }
 a {
-  color: #2F4D46;
-  text-decoration: none; /* No underlining */
+  color: #FFFFFF;
+  text-decoration: none;
 }
 a:hover {
-  color: #5A7972;
+  color: #2F4D46;
 }
-a:visited { /* visited link */
-  color: #5A7972;
+a:visited {
+  color: #2F4D46;
 }
-a:active { /* selected link */
-  color: #5A7972;
+a:active {
+  color: #2F4D46;
 }
 a:focus {
-  color: #5A7972;
-  text-decoration: underline;
+  color: #2F4D46;
 }
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
   background-color: #F79D96 ;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #FFFFFF !important;
   font-weight: 500;
+  margin-top: : 10px;
+  margin-bottom: 10px;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #994c30;
+  text-align: center;
 }
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 .button.contact {
   background-color: transparent;
-  color: #FFFFFF  !important;
+  color: #2F4D46  !important;
   text-transform: uppercase;
-  border: 2px solid #F79D96  ;
+  border: 2px solid #2F4D46;
   }
-  .button.contact:hover {
+.button.contact:hover {
     background-color: #F79D96 ;
-    color: #ffffff !important;
+    color: #FFFFFF !important;
     opacity: 0.8;
   }
-  contact {
-    background-color:#B2D2CB;
+contact {
+    background-color: #2F4D46;
   }
+#work .row {
+    margin: 0 20px;
+    border-bottom: 1px solid #F79D96;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+#about .row {
+      border-bottom: 1px solid #F79D96;
+      padding-bottom: 10px;
+  }
+#vela .row {
+      border-bottom: 1px solid #F79D96;
+      padding-bottom: 10px;
+  }
+#bs .row {
+        border-bottom: 1px solid #F79D96;
+        padding-bottom: 10px;
+    }
+#work .container {
+  }
+.center {
+    text-align: center;
+  }
+.logo {
+  max-width: 250px
+  text-align: center;
+}
+.container {
+  max-width: 250px
+  text-align: center;
+}
+img{
+    padding-top: 0px;
+    max width: 300px;
+  }
+span {
+  max-width: 250px
+  text-align: center;
+}
