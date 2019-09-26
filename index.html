@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head id="hero">
+  <head id="head">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"
-    <title>UX DESIGNER & ARCHITECTURAL TECHNOLOGIST</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
 <body>
-  <header>
-    <img src="img/logo.svg" alt="Natalie Lykking Kitchell" >
+  <header id="header">
+    <div class="container">
     <nav>
       <ul>
         <li><a href="index.html">Work</a></li>
@@ -18,51 +17,70 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <main id="Work">
-    <div>
-      <h4>Hi my name is <br> NATALIE LYKKING KITCHELL, <br> I'm a:</h4>
+<main id="main">
+  <div class="hero">
+    <div class="container">
+      <img class="logo" src="img/logo.svg" alt="Natalie Lykking Kitchell" >
       <h1>
-        <span>UX DESIGNER & ARCHITECTURAL TECHNOLOGIST </span>
+        UX DESIGNER & ARCHITECTURAL TECHNOLOGIST
       </h1>
+      <h4>
+        Hi my name is <br> NATALIE LYKKING KITCHELL
+      </h4>
       <p>
         I have a flair for project planning. In my work, I have gotten recognition on my abilities to get everyone focused on a common goal and to have a flexible and open attitude to the design process.
         I have a keen eye for aesthetics and details, and have the ability to solve problems with accuracy and attention to detail in a creative and effective way especially through my experience working in architecture.
       </p>
     </div>
-    <h2>MY WORK</h2>
-    <section>
+  </div>
+  <div id="work">
+  <div class="container">
+    <h1>
+      MY WORK
+    </h1>
+  <div class="row">
+    <section class="vela">
       <picture>
         <source srcset="img/Vela/Vela_front2.jpg" media="(max-width:767px)">
         <img src="img/Vela/Vela_front1.jpg" alt="My Image">
       </picture>
-    <h3>VELA APP</h3>
+    <h2>VELA APP</h2>
     <p>
       Vela is a weather app aimed to help water sport performers prepare for their day on the ocean by delivering them informative and visually pleasing weather updates.
       The app focuses on giving users information about conditions under and over water, and aim to help them understand the ocean at the specific spot they are going to.
     </p>
     <a href="vela.html"class="button">View Project</a>
-  </section>
-  <section>
-    <picture>
+    </section>
+  </div>
+  <div class="row">
+    <section class="bs">
+      <picture>
       <source srcset="img/Boligsiden/BS_front2.jpg" media="(max-width:767px)">
       <img src="img/Boligsiden/BS_front1.jpg" alt="My Image">
     </picture>
-    <h3>BOLIGSIDEN -Website redesign</h3>
+    <h2>BOLIGSIDEN -Website redesign</h2>
     <p>
       After 10 years of the site only having minor updates it was time to clean and reorganize the site content and structure it in a relevant and visually pleasing way.
       I helped boligsiden start this restructuring process and find possible solutions for their further development through user interviews research and organizing content from the site into design solutions and wireframes.
     </p>
     <a href="boligsiden.html"class="button">View Project</a>
-  </section>
+    </section>
+</div>
+</div>
 </main>
 <footer id="contact">
-    <h2>CONTACT ME</h2>
-    <p>Natalie Lykking Kitchell <br>
+  <div class="container">
+    <h1>CONTACT ME</h1>
+      <p>
+      Natalie Lykking Kitchell
+      <br>
       Phone <a href="tel:+4593992855">(+45)93992855</a>
+      <br>
       Skype <a href="skype:natalie.kitchell">natalie.kitchell</a>
-      <p>Email: natalie.kitchell@gmail.com</p>
+      <br>
       <a href="natalie.kitchell@gmail.com" class="button contact">Send me an email</a>
     </p>
     <svg style="enable-background:new 0 0 64 64;width: 25px;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
@@ -166,6 +184,7 @@
     <p>
       © 2019 by Natalie Lykking Kitchell
     </p>
+  </div>
 </footer>
 </body>
 
