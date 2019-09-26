@@ -57,14 +57,18 @@ body{
   width: 100%;
   }
 .hero {
-  background-color: #2F4D46;
   display: inline-block;
   border-bottom: 3px solid #F79D96;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 30px;
   text-align: center;
   width: 100%;
 }
+.logo{
+  background-color: #2F4D46;
+  margin: 0px
+  }
+
 .work{
   display: inline-block;
   width: 100%;
